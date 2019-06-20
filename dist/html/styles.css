@@ -40,8 +40,22 @@
 		font-family: 'Open Sans Condensed';
 		font-weight: 700;
 		font-style: normal;
+		text-align: center;
 		text-transform: uppercase;
 		z-index: 1;
+
+	}
+
+	@media screen and (max-width: 749px) {
+
+		.pricing__more {
+
+			position: static;
+			width: 100%;
+			max-width: 150px;
+			margin: 20px auto 20px auto;
+
+		}
 
 	}
 
