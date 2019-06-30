@@ -1,0 +1,955 @@
+.cost-of-care___body {}
+
+	.cost-of-care__overlay {
+
+		/* padding: 20px; */
+		/* background: rgba(0, 0, 0, 0.50); */
+
+	}
+
+	@media screen and (min-width: 760px) {
+
+		.cost-of-care__overlay {
+
+			/* padding: 40px; */
+
+		}
+
+	}
+
+		.cost-of-care__modal {
+
+			/* width: 100%; */
+			/* max-width: 1260px; */
+			/* margin: 0 auto; */
+			/* background: #ffffff; */
+			/* box-shadow: 0 0 30px rgba(0, 0, 0, 0.35); */
+			/* border-radius: 5px; */
+
+		}
+
+			.cost-of-care__wrap {}
+
+				/* Header */
+
+				.cost-of-care__header {
+
+					position: relative;
+					padding: 22px 50px 22px 50px;
+					border-bottom: 1px solid #e5e6e5;
+
+				}
+
+
+
+				@media screen and (min-width: 540px) {
+
+					.cost-of-care__header {
+
+						padding: 22px 70px 22px 70px;
+
+					}
+
+				}
+
+					.cost-of-care__title {
+
+						margin: 0;
+						font-size: 24px;
+						line-height: 30px;
+						text-align: center;
+						color: #87b1ca;
+
+					}
+
+					@media screen and (min-width: 540px) {
+
+						.cost-of-care__title {
+
+							font-size: 30px;
+							line-height: 36px;
+	
+						}						
+
+					}
+
+					@media screen and (min-width: 760px) {
+
+						.cost-of-care__title {
+
+							font-size: 36px;
+							line-height: 42px;
+	
+						}						
+
+					}
+
+					.cost-of-care__header .close-modal {
+
+						display: none !important;
+
+						position: absolute;
+						right: 10px;
+						top: 50%;
+						margin: -20px 0 0 0;
+						cursor: pointer;
+						overflow: hidden;
+						z-index: 1;
+
+					}
+
+					@media screen and (min-width: 540px) {
+
+						.cost-of-care__header .close-modal {
+
+							right: 20px;
+	
+						}
+
+					}
+
+						.cost-of-care__header .close-modal span {
+
+							display: block;
+							width: 40px;
+							height: 40px;
+							text-indent: -9999px;
+							background: url(new-assets/close-icon.png) center center no-repeat;
+
+						}
+
+				/* Content */
+
+				.cost-of-care__content {
+
+					padding: 20px 20px 20px 20px;
+					border-top: 1px solid #ffffff;
+					background: #f8f8f7;
+					border-radius: 0 0 5px 5px;
+
+				}
+
+					.cost-of-care__map-component {}
+
+						/* Form */
+
+						.cost-of-care__form {
+
+							padding: 0 !important;
+
+						}
+
+							/* Search */
+
+							.cost-of-care__search {
+
+								width: auto;
+								max-width: none !important;
+								margin: 0;
+								/* background: pink; */
+
+							}
+
+							@media screen and (min-width: 860px) {
+
+								.cost-of-care__search {
+
+									display: flex;
+									flex-direction: row;
+									flex-wrap: wrap;
+									justify-content: space-between;
+									align-items: stretch;
+									align-content: flex-start;
+
+								}
+
+							}
+
+								/* Region Link */
+
+								.cost-of-care__region-link {
+
+									width: 100%;
+									margin: 0 0 20px 0 !important;
+									padding: 10px;
+									text-align: left !important;
+									color: #87b1ca;
+									/* background: pink; */
+										
+								}
+
+								/* Refinements */
+
+								.cost-of-care__refinements {
+
+									float: none !important;
+									width: 100% !important;
+									margin: 0 0 20px 0;
+									padding: 0 !important;
+									/* background: orange; */
+
+								}
+
+								@media screen and (min-width: 860px) {
+
+									.cost-of-care__refinements {
+
+										width: 50%;
+										width: calc(50% - 10px) !important;
+										margin: 0;
+	
+									}
+
+								}
+
+								/* Refinements (While comparing regions) */
+
+								.hide-main-right .cost-of-care__refinements {
+
+									display: flex;
+									flex-direction: row;
+									flex-wrap: wrap;
+									justify-content: space-between;
+									align-items: flex-start;
+									align-content: flex-start;
+									width: 100% !important;
+									/* background: pink; */
+
+								}
+
+									/* Location */
+
+									.cost-of-care__location {}
+
+									/* Location (while comparing regions) */
+
+									.hide-main-right .cost-of-care__location {
+
+										width: 100%;
+										/* background: pink; */
+
+									}
+
+										.cost-of-care__location .well-coc-inner {}
+
+										.hide-main-right .cost-of-care__location .well-coc-inner {
+
+											/* background: pink; */
+
+										}
+
+										@media screen and (min-width: 1080px) {
+
+											.hide-main-right .cost-of-care__location .well-coc-inner {
+
+												display: flex;
+												flex-direction: row;
+												flex-wrap: wrap;
+												justify-content: space-between;
+												align-items: flex-start;
+												align-content: flex-start;
+	
+											}											
+
+										}
+
+											.cost-of-care__location .coc-compare-left {}
+
+											.hide-main-right .cost-of-care__location .coc-compare-left {
+
+												float: none !important;
+												width: 100% !important;
+												/* background: green; */
+												border: none !important;
+
+											}
+
+											@media screen and (min-width: 1080px) {
+
+												.hide-main-right .cost-of-care__location .coc-compare-left {
+												
+													width: calc(50% - 10px) !important;
+
+												}
+
+											}
+
+												/* State */
+
+												.cost-of-care__state {
+
+													position: relative;
+													padding: 10px 10px 20px 10px !important;
+													/* background: green; */
+
+												}
+
+												@media screen and (max-width: 539px) {
+
+													.cost-of-care__state {
+
+														float: none !important;
+														width: 100% !important;
+														margin: 0 0 10px 0;
+
+													}
+
+												}
+
+													.cost-of-care__state label {}
+
+													.cost-of-care__state p {}
+
+													.cost-of-care__state select {
+
+														width: 100% !important;
+														width: calc(100% - 18px) !important;
+
+													}
+
+													.cost-of-care__state .coc-dropdown-nav {
+
+														width: 100% !important;
+
+													}
+
+												/* Region */
+
+												.cost-of-care__region {
+
+													position: relative;
+													padding: 10px 10px 20px 10px !important;
+													/* background: blue !important; */
+
+												}
+
+												@media screen and (max-width: 539px) {
+
+													.cost-of-care__region {
+
+														float: none !important;
+														width: 100% !important;
+
+													}
+
+												}
+
+													.cost-of-care__region label {}
+
+													.cost-of-care__region p {}
+
+													.cost-of-care__region select {
+
+														width: 100% !important;
+														width: calc(100% - 18px) !important;
+
+													}
+
+													.cost-of-care__region .coc-dropdown-nav {
+
+														width: 100% !important;
+
+													}
+
+											.cost-of-care__location .coc-compare-right {}
+
+											.hide-main-right .cost-of-care__location .coc-compare-right {
+
+												float: none !important;
+												width: 100% !important;
+												/* background: purple; */
+
+											}
+
+											@media screen and (min-width: 1080px) {
+
+												.hide-main-right .cost-of-care__location .coc-compare-right {
+
+													width: calc(50% - 10px) !important;
+	
+												}
+
+											}
+
+												/* State */
+
+												.cost-of-care__state-alt {
+
+													position: relative;
+													padding: 10px 10px 20px 10px !important;
+													/* background: green; */
+
+												}
+
+												@media screen and (max-width: 539px) {
+
+													.cost-of-care__state-alt {
+
+														float: none !important;
+														width: 100% !important;
+														margin: 0 0 10px 0;
+
+													}
+
+												}
+
+													.cost-of-care__state-alt label {}
+
+													.cost-of-care__state-alt p {}
+
+													.cost-of-care__state-alt select {
+
+														width: 100% !important;
+														width: calc(100% - 18px) !important;
+
+													}
+
+													.cost-of-care__state-alt .coc-dropdown-nav {
+
+														width: 100% !important;
+
+													}
+
+												/* Region */
+
+												.cost-of-care__region-alt {
+
+													position: relative;
+													padding: 10px 10px 20px 10px !important;
+													/* background: blue !important; */
+
+												}
+
+												@media screen and (max-width: 539px) {
+
+													.cost-of-care__region-alt {
+
+														float: none !important;
+														width: 100% !important;
+
+													}
+
+												}
+
+													.cost-of-care__region-alt label {}
+
+													.cost-of-care__region-alt p {}
+
+													.cost-of-care__region-alt select {
+
+														width: 100% !important;
+														width: calc(100% - 18px) !important;
+
+													}
+
+													.cost-of-care__region-alt .coc-dropdown-nav {
+
+														width: 100% !important;
+
+													}
+
+									/* Period */
+
+									.cost-of-care__period {
+
+										float: none !important;
+
+									}
+
+									/* Period (while comparing regions) */
+
+									.hide-main-right .cost-of-care__period {
+
+										width: 100% !important;
+										margin: 0 !important;
+										/* background: purple; */
+										border: none !important;
+
+									}
+									
+									@media screen and (min-width: 900px) {
+
+										.hide-main-right .cost-of-care__period {
+
+											width: 50%;
+											width: calc(50% - 10px) !important;
+	
+										}										
+
+									}
+
+										.cost-of-care__period .coc-btn-group {}
+
+											.cost-of-care__period button {}
+
+											@media screen and (max-width: 539px) {
+
+												.cost-of-care__period button {
+
+													width: 100% !important;
+													margin: 0 0 10px 0 !important;
+	
+												}							
+
+												.cost-of-care__period button:last-of-type {
+
+													margin: 0 !important;
+
+												}
+
+											}
+
+									/* Future */
+
+									.cost-of-care__future {
+
+										float: none !important;
+
+									}
+
+									/* Future (while comparing regions) */
+
+									.hide-main-right .cost-of-care__future {
+
+										width: 100% !important;
+										margin: 0 !important;
+
+									}
+
+
+									@media screen and (min-width: 900px) {
+
+										.hide-main-right .cost-of-care__future {
+
+											width: 50%;
+											width: calc(50% - 10px) !important;
+	
+										}										
+
+									}
+
+										.cost-of-care__future .well-coc {
+
+											margin: 0;
+
+										}
+
+											/* For year progression that appears above the slider */
+
+											.cost-of-care__future .irs-num-wrap {}
+
+												.cost-of-care__future .irs-single {
+
+													color: #87b1ca;
+
+												}
+
+												.cost-of-care__future #sliderSuffix {
+
+													color: #87b1ca;
+
+												}
+
+
+								/* Map */
+
+								.cost-of-care__map {
+
+									float: none !important;
+									width: 100% !important;
+									/* padding: 0 !important; */
+									/* background: purple; */
+
+								}
+
+								@media screen and (min-width: 860px) {
+
+									.cost-of-care__map {
+
+										width: calc(50% - 10px) !important;
+										/* padding: 0 !important; */
+										/* background: purple; */
+	
+									}
+
+								}
+
+							/* Details */
+
+							.cost-of-care__details {
+
+								width: auto !important;
+								max-width: none !important;
+								margin: 30px 0 0 0 !important;
+								background: none !important;
+
+							}
+
+								.cost-of-care__details-inner-wrap {
+
+									padding: 0 !important;
+
+								}
+
+									/* Monthly Costs */
+
+									.cost-of-care__monthly-costs {
+
+										margin: 0;
+										/* background: yellow; */
+
+									}
+
+										.cost-of-care__monthly-costs-title {}
+
+											.cost-of-care__monthly-costs-title h2 {
+
+												margin: 0;
+
+											}
+
+										.cost-of-care__monthly-costs-services {
+
+											margin: 16px 0 0 0;
+											/* background: pink; */
+
+										}
+
+										@media screen and (min-width: 760px) {
+
+											.cost-of-care__monthly-costs-services {
+
+												display: flex;
+												flex-direction: row;
+												flex-wrap: wrap;
+												justify-content: space-between;
+												align-items: stretch;
+												align-content: flex-start;
+	
+											}											
+
+										}
+
+											.cost-of-care__monthly-costs-services .coc-card-wrap {
+
+												float: none;
+												width: auto;
+												margin: 0 0 20px 0;
+												padding: 0;
+												background: #ffffff;
+												border: 1px solid #cccccc;
+												border-radius: 5px;
+
+											}
+
+											.cost-of-care__monthly-costs-services .coc-card-wrap:last-of-type {
+
+												margin: 0;
+
+											}
+
+											@media screen and (min-width: 760px) {
+
+												.cost-of-care__monthly-costs-services .coc-card-wrap {
+
+													width: 50%;
+													width: calc(50% - 10px);
+													margin: 0;
+	
+												}												
+
+											}
+
+											.cost-of-care__monthly-costs-services .coc-card-wrap:nth-child(1),
+											.cost-of-care__monthly-costs-services .coc-card-wrap:nth-child(2)
+											 {
+
+												margin: 0 0 20px 0;
+
+											 }
+
+											@media screen and (min-width: 1080px) {
+
+												.cost-of-care__monthly-costs-services .coc-card-wrap:nth-child(1),
+												.cost-of-care__monthly-costs-services .coc-card-wrap:nth-child(2) {
+
+													margin: 0;
+
+												}
+
+											}
+
+											@media screen and (min-width: 1080px) {
+
+												.cost-of-care__monthly-costs-services .coc-card-wrap {
+													
+													width: 25%;
+													width: calc(25% - 10px);
+
+												}
+
+											}
+
+												.cost-of-care__monthly-costs-services .coc-card-wrap .coc-card {
+
+													border: none;
+													border-radius: 0;
+													/* min-height: 0 !important; */
+
+												}
+
+													.cost-of-care__monthly-costs-services .coc-cards-header {
+
+														position: relative;
+														padding: 10px 10px 10px 50px;
+														/* background: pink !important; */
+														border-radius: 4px 4px 0 0;
+
+													}
+
+														/* Text */
+
+														.cost-of-care__monthly-costs-services #coc-service-1_headLabel,
+														.cost-of-care__monthly-costs-services #coc-service-2_headLabel,
+														.cost-of-care__monthly-costs-services #coc-service-3_headLabel,
+														.cost-of-care__monthly-costs-services #coc-service-4_headLabel {
+
+															/* background: pink; */
+
+														}
+
+															.cost-of-care__monthly-costs-services .coc-care-icon {
+
+																display: none !important;
+
+															}
+
+														/* Icon */
+
+														.cost-of-care__monthly-costs-services .coc-card-icon {
+
+															position: absolute;
+															left: 10px;
+															top: 50%;
+															width: 30px;
+															height: 30px;
+															margin: -15px 0 0 0;
+															/* background: green; */
+															z-index: 1;
+
+														}
+
+														.cost-of-care__monthly-costs-services .coc-service-1 .coc-card-icon {
+
+															background:url(new-assets/icon-home-health-care.png) center center no-repeat;
+															background-size: 30px 30px;
+														
+														}
+
+														.cost-of-care__monthly-costs-services .coc-service-2 .coc-card-icon {
+
+															background: url(new-assets/icon-adult-day-health-care.png) center center no-repeat;
+															background-size: 30px 30px;
+														
+														}
+
+														.cost-of-care__monthly-costs-services .coc-service-3 .coc-card-icon {
+
+															background: url(new-assets/icon-assisted-living-facility.png) center center no-repeat;
+															background-size: 30px 30px;
+														
+														}
+
+														.cost-of-care__monthly-costs-services .coc-service-4 .coc-card-icon {
+
+															background: url(new-assets/icon-nursing-home.png) center center no-repeat;
+															background-size: 30px 30px;
+														
+														}
+
+													.cost-of-care__monthly-costs-services .coc-table-card {}
+
+														.cost-of-care__monthly-costs-services .coc-table-card .num-cost  {
+
+															color: #87b1ca;
+
+														}
+
+														.cost-of-care__monthly-costs-services .coc-table-card .num-future  {
+
+															color: #87b1ca;
+
+														}
+
+											.cost-of-care__monthly-costs-services .coc-hourly-info-block {
+
+												float: none !important;
+												width: 100%;
+												/* background: purple; */
+
+											}
+
+												.cost-of-care__monthly-costs-services .coc-hourly-info-block p {
+
+													padding: 16px 0 0 0;
+													margin: 0;
+
+												}
+
+											.cost-of-care__form[data-period="Hourly"] .cost-of-care__monthly-costs-services .coc-hourly-info-block {
+
+												/* background: yellow; */
+
+											}
+
+									/* Monthly Costs (Alt) */
+
+									.cost-of-care__monthly-costs-alt {
+
+										display: flex !important;
+										flex-direction: row;
+										flex-wrap: wrap;
+										justify-content: space-between;
+										align-items: stretch;
+										align-content: flex-start;
+										width: 100% !important;
+										max-width: none !important;
+										margin: 0;
+										/* background: pink; */
+
+									}
+
+										.cost-of-care__monthly-costs-title-alt {
+
+											width: 100%;
+
+										}
+
+											.cost-of-care__monthly-costs-title-alt h2 {
+
+												margin: 0;
+
+											}
+
+											.cost-of-care__monthly-costs-alt .cards-wrap-cost {
+
+												width: 100%;
+
+											}
+
+											@media screen and (min-width: 760px) {
+
+												.cost-of-care__monthly-costs-alt .cards-wrap-cost {
+
+													width: 50%;
+													width: calc(50% - 10px);
+	
+												}
+
+											}
+
+												.cost-of-care__monthly-costs-alt .coc-card-wrap {
+
+													width: 100% !important;
+													padding: 0 !important;
+													margin: 0;
+
+												}
+
+													.cost-of-care__monthly-costs-alt .num-cost {
+
+														color: #87b1ca
+														
+													}
+
+									/* Weekly Care Hours */
+
+									.cost-of-care__weekly-care-hours {
+
+										margin: 20px 0 0 0;
+										/* background: orange; */
+
+									}
+
+										.cost-of-care__weekly-care-hours .accordion {
+
+											margin: 0;
+											background: none;
+											border-radius: 0 !important;
+
+										}
+
+											.cost-of-care__weekly-care-hours .accordion-wrapper {
+
+												border-radius: 0 !important;
+
+											}
+
+											.cost-of-care__weekly-care-hours .accordion-wrapper .accordion-section {
+
+												background: none !important;
+
+											}
+
+											.cost-of-care__weekly-care-hours .accordion-wrapper .accordion-section__heading {
+
+												margin: 0 !important;
+												padding: 0 !important;
+												background: none !important;
+												border: none !important;
+												border-radius: 0 !important;
+
+											}
+
+											.cost-of-care__weekly-care-hours .accordion-wrapper .accordion-section__content {
+
+												margin: 10px 0 0 0 !important;
+												padding: 0 !important;
+
+											}
+
+												.cost-of-care__weekly-care-hours .accordion-wrapper p {}
+
+												.cost-of-care__weekly-care-hours .accordion-wrapper .coc-weekly-hours-for-example {
+
+													display: block !important;
+													float: none !important;
+													margin: 0 0 14px 0 !important;
+
+												}
+
+													.cost-of-care__weekly-care-hours .accordion-wrapper .coc-weekly-hours-indent {
+
+														margin: 0 !important;
+
+													}
+
+												.cost-of-care__weekly-hours-calculator {
+
+													overflow: hidden;
+
+												}
+												
+													.cost-of-care__weekly-hours-calculator input {
+
+														color: #87b1ca !important;
+
+													}
+
+													.cost-of-care__weekly-care-hours .accordion-wrapper .coc-weekly-hours-text {
+
+														margin-top: 0 !important;
+
+													}
+
+													.cost-of-care__weekly-care-hours .accordion-wrapper .coc-weekly-hours-calculation {
+
+														margin-top: 0 !important;
+
+													}
+
+												.cost-of-care__weekly-care-hours .accordion-wrapper .coc-weekly-hours-for-example-mobile {
+
+													display: none !important;
+
+												}

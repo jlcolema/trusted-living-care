@@ -1,0 +1,112 @@
+.cost-of-care {}
+
+	.cost-of-care__iframe {}
+
+		.cost-of-care__body {}
+
+			.cost-of-care__overlay {
+
+				padding: 40px;
+				background: rgba(0, 0, 0, 0.15);
+
+			}
+
+				.cost-of-care__modal {
+
+					width: 100%;
+					max-width: 1260px;
+					margin: 0 auto;
+					box-shadow: 0 0 30px rgba(0, 0, 0, 0.15);
+
+				}
+
+					.cost-of-care__wrap {}
+
+						/* Header */
+
+						.cost-of-care__header {
+
+							padding: 22px 20px 22px 20px;
+							border-bottom: 1px solid #e5e6e5;
+							background: #ffffff;
+							border-radius: 5px 5px 0 0;
+
+						}
+
+							.cost-of-care__title {
+
+								margin: 0;
+								font-size: 36px;
+								line-height: 42px;
+								text-align: center;
+								color: #87b1ca;
+
+							}
+
+						/* Content */
+
+						.cost-of-care__content {
+
+							border-top: 1px solid #ffffff;
+
+						}
+
+							.cost-of-care__map-component {}
+
+								/* Form */
+
+								.cost-of-care__form {
+
+									background: orange;
+
+								}
+
+									/* Search */
+
+									.cost-of-care__search {}
+
+										/* Region Link */
+
+										.cost-of-care__region-link {}
+
+										/* Refinements */
+
+										.cost-of-care__refinements {}
+
+											/* Location */
+
+											.cost-of-care__location {}
+
+												/* State */
+
+												.cost-of-care__state {}
+
+												/* Region */
+
+												.cost-of-care__region {}
+
+											/* Period */
+
+											.cost-of-care__period {}
+
+											/* Future */
+
+											.cost-of-care__future {}
+
+										/* Map */
+
+										.cost-of-care__map {}
+
+										/* .coc-bottom-half-wrapper */
+
+										/* Monthly Costs */
+
+										.cost-of-care__monthly-costs {}                
+
+									/* Details */
+
+									.cost-of-care__details {}
+
+									/* Footnotes */
+
+									.cost-of-care__footnotes {}

@@ -1,0 +1,1872 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+    
+    <meta charset="utf-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="keywords" content="cost of long term care, long term care costs, average long term care costs, long term care costs by state">
+
+    <meta name="description" content="Discover and compare the average cost of long term care by care facilities and state with our yearly reports.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i,600,600i|Open+Sans:400,700" rel="stylesheet">
+
+    <link href="new-clientlib.css" rel="stylesheet">
+
+    <link href="new-modal.css" rel="stylesheet">
+
+</head>
+ 
+<body class="costofcarepage cost-of-care__body" style="background: none !important;">
+
+    <div class="cost-of-care__overlay">
+
+        <div class="cost-of-care__modal">
+
+            <div class="cost-of-care__wrap">
+
+                <!-- Header -->
+
+                <div class="columnlayout section cost-of-care__header">
+                    
+                    <!-- Title -->
+
+                    <h2 class="section-header cost-of-care__title">Calculate the Cost of Care in your Area</h2>
+
+                    <div id="close-modal" class="close-modal">
+                        
+                        <span>Close</span>
+                    
+                    </div>
+
+                </div>
+
+                <!-- Content -->
+
+                <div class="coc-wrapper parbase section cost-of-care__content">
+
+                    <div id="coc-container" class="coc-main-wrapper cost-of-care__form showing-state-view hide-main-right">
+                
+                        <!-- BEGIN Search -->
+
+                        <div class="coc-top-half cost-of-care__section cost-of-care__search">
+
+                            <!-- BEGIN Region Link -->
+
+                            <div class="coc-region-link cost-of-care__region-link">
+                                
+                                Can't find your region? <i class="fa fa-info-circle" style="cursor:pointer;" data-placement="bottom" data-trigger="click" data-toggle="tooltip" data-container="body" data-html="true" title=""  data-original-title="<div class='coc-tooltip-margin-bottom coc-tooltip-margin-top'><strong>Can't find your region?</strong></div><div class='coc-tooltip-margin-bottom'>Your location may be listed under a metro region for nearby state. Example: Dearborn, IN, is listed under &quot;Ohio&quot; (State) and &quot;Cincinnati&quot; (Metro Region)</div><div class='coc-tooltip-margin-bottom'>If you don't see your metro region, use this <span class='strong-bold'><a href='https://pro.genworth.com/riiproweb/productinfo/pdf/119725.pdf' target='_blank'>Region Definitions list</a></span> to find the metro region for your city or county.</div><div class='coc-tooltip-margin-bottom'>If your city or county is not listed, choose your state and <span class='strong-bold'>&quot;Rest of State&quot; as your metro region.</span></div><div class='coc-tooltip-margin-bottom'><span class='strong-italic'>Genworth's Cost of Care regions are based on Metropolitan Statistical Areas (MSAs) as defined by the Office of Management and Budget. MSAs combine a core urban area with nearby counties.</span></div>"></i>
+                            
+                            </div>
+                            
+                            <!-- END Region Link -->
+
+                            <!-- BEGIN Refinements -->
+
+                            <div class="coc-main-left cost-of-care__refinements">
+                        
+                                <!-- BEGIN Location -->
+
+                                <div class="well-coc well-compare cost-of-care__location">
+                            
+                                    <div class="well-coc-inner">
+                            
+                                        <div class="coc-compare-left">
+                                    
+                                            <div id="cocStateDropdown" class="coc-select cost-of-care__state" data-form-select coc-stTxt="National">
+                                        
+                                                <label id="lblSelectState" class="sr-only" for="selectStateOne">Select a State</label>
+                                        
+                                                <p class="coc-dropdown-title">SELECT STATE</p>
+                                        
+                                                <select id="coc-states" class="coc-select-mobile" name="selectStateOne"  aria-labelledby="lblSelectState"></select>
+                            
+                                                <div class="coc-dropdown-nav">
+                            
+                                                    <span class="pull-right coc-dropdown-chevron"><i class="fa fa-chevron-down"></i></span>
+                            
+                                                    <span id="stateSelectVal" class="coc-dropdown-txt">National</span>
+                            
+                                                </div>
+                            
+                                            </div>
+                                    
+                                            <div id="cocLocDropdown" class="coc-select cost-of-care__region" data-form-select>
+                                            
+                                                <label id="lblSelectState2" class="sr-only" for="selectStateTwo">Select a State</label>
+                                            
+                                                <p class="coc-dropdown-title">SELECT METRO REGION</p>
+                                            
+                                                <select id="coc-stRegions" class="coc-select-mobile" name="selectStateTwo" aria-labelledby="lblSelectState2">
+                                                </select>
+                                            
+                                                <div class="coc-dropdown-nav">
+                                            
+                                                    <span class="pull-right coc-dropdown-chevron"><i class="fa fa-chevron-down"></i></span>
+                                            
+                                                    <span id="locSelectVal" class="coc-dropdown-txt">National</span>
+                                            
+                                                </div>
+                                            
+                                            </div>
+                                        
+                                        </div>
+                                
+                                        <div class="coc-compare-right">
+                                
+                                            <div class="coc-compare-other">
+                                
+                                                <div class="coc-add-loc">
+                                
+                                                    <strong class="coc-compare-loc coc-compare-cta">Compare Location</strong>
+                                
+                                                </div>
+                                
+                                            </div>
+                                            
+                                            <div id="cocStateDropdown_2" class="coc-select coc-compare-opt2 cost-of-care__state-alt" data-form-select coc-stTxt="Select State" style="display: none;">
+                                    
+                                                <p class="coc-dropdown-title">SELECT STATE</p>
+                                    
+                                                <select id="coc-states_2" title="Select State" class="coc-select-mobile"></select>
+                                    
+                                                <div class="coc-dropdown-nav">
+                                    
+                                                    <span class="pull-right coc-dropdown-chevron"><i class="fa fa-chevron-down"></i></span>
+                                    
+                                                    <span id="stateSelectVal_2" class="coc-dropdown-txt">Select State</span>
+                                    
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div id="cocLocDropdown_2" class="coc-select coc-compare-opt2 cost-of-care__region-alt" data-form-select coc-stTxt="Select Metro Region" style="display: none;">
+                                    
+                                                <p class="coc-dropdown-title">SELECT METRO REGION</p>
+                                    
+                                                <select id="coc-stRegions_2" title="Select Metro Region" class="coc-select-mobile"></select>
+                                    
+                                                <div class="coc-dropdown-nav">
+                                    
+                                                    <span class="pull-right coc-dropdown-chevron"><i class="fa fa-chevron-down"></i></span>
+                                    
+                                                    <span id="locSelectVal_2" class="coc-dropdown-txt">Select Metro Region</span>
+                                    
+                                                </div>
+                                    
+                                            </div>
+                                    
+                                            <div id="reset" class="coc-reset coc-compare-opt2">Reset</div>
+                                
+                                        </div>
+                                
+                                    </div>
+                            
+                                </div>
+                                
+                                <!-- END Location -->
+
+                                <!-- BEGIN Period -->
+
+                                <div class="coc-freq-left cost-of-care__period">
+                    
+                                    <div class="well-coc">
+                    
+                                        <div class="well-coc-inner">
+                    
+                                            <h2 class="well-coc-title">SELECT COST BY PERIOD</h2>
+                    
+                                            <i class="fa fa-info-circle" data-toggle="tooltip" data-html="true" data-placement="bottom"
+                                                data-container="body" title="View the cost of care based on annual, monthly, daily, or hourly rates."></i>
+                                            
+                                            <div class="coc-btn-group">
+                    
+                                                <button type="button" class="btn-coc" data-freq="Hourly">HOURLY</button>
+                                                <button type="button" class="btn-coc" data-freq="Daily">DAILY</button>
+                                                <button type="button" class="btn-coc active" data-freq="Monthly">MONTHLY</button>
+                                                <button type="button" class="btn-coc" data-freq="Annual">ANNUAL</button>
+
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                    
+                                </div>
+                        
+                                <!-- END Period -->
+
+                                <!-- BEGIN Future -->
+
+                                <div class="coc-freq-right cost-of-care__future">
+
+                                    <div class="well-coc">
+
+                                        <div class="well-coc-inner">
+
+                                            <h2 class="well-coc-title">CALCULATE FUTURE COST</h2>
+                                            
+                                            <div class="coc-slider-wrapper">
+
+                                                <input id="cocSlider" title="Future Years Slider" aria-readonly="true">
+
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                    </div>
+                                            
+                                    <div id="national_view" class="coc-subslider" style="display:none;">
+                                
+                                        <a class="coc-return-natl"><strong>Return to National View</strong></a>
+                            
+                                    </div>
+
+                                    <div id="map_view" class="coc-subslider">
+                                
+                                        <a class="coc-return-map"><strong>Return to Map View</strong></a>
+                            
+                                    </div>
+                        
+                                </div>
+                    
+                                <!-- END Future -->
+
+                            </div>
+                            
+                            <!-- END Refinements -->
+
+                            <!-- BEGIN Map -->
+
+                            <div class="coc-main-right cost-of-care__map">
+                    
+                                <div class="coc-map-wrapper">
+                    
+                                    <h4 class="coc-map-title">Interactive Map</h4>
+                    
+                                    <div class="coc-google-map" id="map-canvas"></div>
+                            
+                                </div>
+                            
+                            </div>
+
+                            <!-- END Map -->
+
+                        </div>
+                    
+                        <!-- END Search -->
+
+                        <!-- BEGIN Details -->
+
+                        <div class="coc-bottom-half cost-of-care__section cost-of-care__details">
+                
+                            <div class="coc-bottom-half-wrapper cost-of-care__details-inner-wrap">
+                
+                                <div class="coc-cost-display cost-of-care__monthly-costs">
+                                    
+                                    <div class="coc-cost-title cost-of-care__monthly-costs-title">
+
+                                        <h2>
+                                            
+                                            <span class="coc-subtitle">
+                                            
+                                                <span id="type-wrap">
+                                                    
+                                                    <span class="type">Monthly Costs:</span>
+                                                
+                                                </span>
+                                                
+                                                <span title="National Median" class="region coc-color-primary">National Median</span>
+                                                
+                                                <span class="year" class="coc-color-primary">(2018)</span>
+                                            
+                                            </span>
+                                        
+                                        </h2>
+                                    
+                                    </div>
+
+                                    <div id="coc-services" class="cost-of-care__monthly-costs-services">
+
+                                        <div class="coc-card-wrap">
+
+                                            <div class="parbase coc-service coc-service-1">
+
+                                                <div id="coc-service-1_file_box" class="coc-card" medianlabel="Cost">
+
+                                                    <div id="coc-service-1_headLabel_1" class="coc-cards-header">
+
+                                                        <table class="coc-card-tableheader">
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-service-1_headLabel">
+                                                                        
+                                                                        <span class="coc-care-icon coc-service-1-icon "></span>
+                                                                        
+                                                                        Home Health Care
+                                                                    
+                                                                    </span>
+                                                                    
+                                                                    <i class="fa fa-info-circle coc-card-icon" data-container="body" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<p><b>Home Health Care</b></p><p>Homemaker Services make it possible for people to live in their own homes or return to their homes by helping them complete household tasks that they can’t manage alone. Homemaker services aides may clean houses, cook meals or run errands.</p><p>Home Health Aides help those who live in their own homes instead of residential care facilities. Home health aides may offer care to people who need more extensive personal care than family or friends are able to or have the time or resources to provide.</p>" data-cardSID="coc-service-1"></i>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td>
+                                                                    
+                                                                    <span class="m-medianLabel"></span>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td class="m-coc-tdlast">
+                                                                    
+                                                                    <span class="m-futureLabel"></span>
+                                                                
+                                                                </td>
+                                                            
+                                                            </tr>
+                                                        
+                                                        </table>
+                                                    
+                                                    </div> 
+
+                                                    <div class="flipClass_coc-service-1">                                        
+                                                        <div class="coc-card-inner ">
+                                                        
+                                                            <table class="coc-table-card">
+                            
+                                                                <tr>
+                                                                    
+                                                                    <td>
+                            
+                                                                        <strong>
+                                                                            
+                                                                            <div id="coc-service-1_headLabel_3" class="coc-service-headLabel">
+                                                                                
+                                                                                Homemaker Services<sup>1</sup>
+                                                                            
+                                                                            </div>
+                                                                        
+                                                                        </strong>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_0_mobile"></div>
+                                                                    
+                                                                    </td>    
+                                                                    
+                                                                    <td class="m-coc-tdlast">
+                                                                        
+                                                                        <div class="num-future" id="future_0_mobile"></div>
+                                                                    
+                                                                    </td>  
+                                                                
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary medianLabel" id="median_label_0">Cost</div>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_0"></div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                </tr>
+                                                                
+                                                                <tr class="growth-row">
+                                                            
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary" id="growth_label_0">
+                                                                            
+                                                                            5-yr Annual Growth<sup>2</sup>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-growth" id="growth_0"></div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                </tr>
+                                                                
+                                                                <tr class="future-row" style="display:none;">
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary futureLabel" id="future_label_0">Cost</div>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-future" id="future_0"></div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                </tr>
+                                                            
+                                                            </table>
+                                                            
+                                                            <hr>
+                                                            
+                                                            <table class="coc-table-card">
+                                                            
+                                                                <tr>
+                                                            
+                                                                    <td>
+                                                            
+                                                                        <strong>
+                                                                            
+                                                                            <div id="coc-service-1_headLabel_4" class="coc-service-headLabel">
+                                                                                
+                                                                                Home Health Aide<sup>1</sup>
+                                                                            
+                                                                            </div>
+                                                                        
+                                                                        </strong>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_1_mobile"></div>
+                                                                    
+                                                                    </td>    
+                                                                    
+                                                                    <td class="m-coc-tdlast">
+                                                                        
+                                                                        <div class="num-future" id="future_1_mobile"></div>
+                                                                    
+                                                                    </td>  
+                                                                
+                                                                </tr>
+                                                                
+                                                                <tr>
+                                                                
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary medianLabel" id="median_label_1">Cost</div>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_1" ></div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                </tr>
+                                                                
+                                                                <tr class="growth-row">
+                                                                
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary" id="growth_label_1">
+                                                                            
+                                                                            5-yr Annual Growth<sup>2</sup>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-growth" id="growth_1"></div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                </tr>
+                                                                
+                                                                <tr class="future-row" style="display:none;">
+                                                                
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary futureLabel" id="future_label_1">Cost</div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-future" id="future_1" ></div>
+                                                                    
+                                                                    </td>
+                                                                
+                                                                </tr>
+                                                        
+                                                            </table>  
+                                                            
+                                                        </div>
+                                                    
+                                                    </div>
+                                                
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+                                
+                                        <div class="coc-card-wrap">
+                                    
+                                            <div class="parbase coc-service coc-service-2">
+
+                                                <div id="coc-service-2_file_box" class="coc-card" medianlabel="Cost">
+
+                                                    <div id="coc-service-2_headLabel_1" class="coc-cards-header">
+
+                                                        <table class="coc-card-tableheader">
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-service-2_headLabel">
+                                                                        
+                                                                        <span class="coc-care-icon coc-service-2-icon "></span>
+                                                                        
+                                                                        Adult Day Health Care<sup>1</sup>
+                                                                    
+                                                                    </span>
+                                                                    
+                                                                    <i class="fa fa-info-circle coc-card-icon" data-container="body" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<p><b>Adult Day Health Care</b></p><p>Adult Day Health Care can offer a break to caregivers. This type of care provides services at a community-based center for adults who need assistance or supervision during the day but who do not need round the clock care. The centers may provide health services, therapeutic services and social activities.</p>" data-cardSID="coc-service-2"></i>
+                                                                
+                                                                </td>
+                                                            
+                                                                <td>
+                                                                    
+                                                                    <span class="m-medianLabel"></span>
+                                                                
+                                                                </td>
+                                                            
+                                                                <td class="m-coc-tdlast">
+                                                                    
+                                                                    <span class="m-futureLabel"></span>
+                                                                
+                                                                </td>
+                                                            
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div> 
+
+                                                    <div class="flipClass_coc-service-2">                                        
+
+                                                        <div class="coc-card-inner ">
+                                                                
+                                                            <table class="coc-table-card">
+                                        
+                                                                <tr>
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <strong>
+                                                                            
+                                                                            <div id="coc-service-2_headLabel_3" class="coc-service-headLabel">
+                                                                                
+                                                                                Adult Day Health Care<sup>1</sup>
+                                                                            
+                                                                            </div>
+                                                                        
+                                                                        </strong>
+                                        
+                                                                    </td>
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_2_mobile"></div>
+                                                                    
+                                                                    </td>    
+                                        
+                                                                    <td class="m-coc-tdlast">
+                                                                        
+                                                                        <div class="num-future" id="future_2_mobile"></div>
+                                                                    
+                                                                    </td>  
+                                        
+                                                                </tr>
+                                        
+                                                                <tr>
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary medianLabel" id="median_label_2">Cost</div>
+                                                                    
+                                                                    </td>
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_2"></div>
+                                                                    
+                                                                    </td>
+                                        
+                                                                </tr>
+                                        
+                                                                <tr class="growth-row">
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary" id="growth_label_2">
+                                                                            
+                                                                            5-yr Annual Growth<sup>2</sup>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </td>
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-growth" id="growth_2"></div>
+                                                                    
+                                                                    </td>
+                                        
+                                                                </tr>
+                                        
+                                                                <tr class="future-row" style="display:none;">
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary futureLabel" id="future_label_2">Cost</div>
+                                                                    
+                                                                    </td>
+                                        
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-future" id="future_2"></div>
+                                                                    
+                                                                    </td>
+                                        
+                                                                </tr>
+                                        
+                                                            </table>
+                                                            
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+                            
+                                        <div class="coc-card-wrap">
+                            
+                                            <div class="parbase coc-service coc-service-3">
+
+                                                <div id="coc-service-3_file_box" class="coc-card" medianlabel="Cost">
+                        
+                                                    <div id="coc-service-3_headLabel_1" class="coc-cards-header">
+                        
+                                                        <table class="coc-card-tableheader">
+                        
+                                                            <tr>
+                        
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-service-3_headLabel">
+                                                                        
+                                                                        <span class="coc-care-icon coc-service-3-icon "></span>
+                                                                        
+                                                                        Assisted Living Facility<sup>2</sup>
+                                                                    
+                                                                    </span>
+                                                                    
+                                                                    <i class="fa fa-info-circle coc-card-icon" data-container="body" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<p><b>Assisted Living Facility</b></p><p>These facilities are living arrangements that provide personal care and health services for people who may need assistance with Activities of Daily Living (ADLs). The level of care provided is not as extensive as that which may be provided in a nursing home. Assisted living is not an alternative to a nursing home, but an intermediate level of long term care. (Referred to as Residential Care Facilities in California)</p>" data-cardSID="coc-service-3"></i>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td>
+                                                                    
+                                                                    <span class="m-medianLabel"></span>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td class="m-coc-tdlast">
+                                                                    
+                                                                    <span class="m-futureLabel"></span>
+                                                                
+                                                                </td>
+                
+                                                            </tr>
+                
+                                                        </table>
+                
+                                                    </div> 
+                
+                                                    <div class="flipClass_coc-service-3">                                        
+                
+                                                        <div class="coc-card-inner">
+                            
+                                                            <table class="coc-table-card">
+            
+                                                                <tr>
+            
+                                                                    <td>
+            
+                                                                        <strong>
+                                                                            
+                                                                            <div id="coc-service-3_headLabel_3" class="coc-service-headLabel">
+                                                                                
+                                                                                Assisted Living Facility<sup>2</sup>
+                                                                            
+                                                                            </div>
+                                                                        
+                                                                        </strong>
+                                                                    
+                                                                    </td>
+                                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_3_mobile"></div>
+                                                                    
+                                                                    </td>    
+                                                                    
+                                                                    <td class="m-coc-tdlast">
+                                                                        
+                                                                        <div class="num-future" id="future_3_mobile"></div>
+                                                                    
+                                                                    </td>  
+                                                    
+                                                                </tr>
+                                                    
+                                                                <tr>
+                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary medianLabel" id="median_label_3">Cost</div>
+                                                                    
+                                                                    </td>
+                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_3"></div>
+                                                                    
+                                                                    </td>
+                                                    
+                                                                </tr>
+                                                    
+                                                                <tr class="growth-row">
+                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary" id="growth_label_3">
+                                                                            
+                                                                            5-yr Annual Growth<sup>2</sup>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </td>
+                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-growth" id="growth_3"></div>
+                                                                    
+                                                                    </td>
+                                                    
+                                                                </tr>
+                                                    
+                                                                <tr class="future-row" style="display:none;">
+                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary futureLabel" id="future_label_3">Cost</div>
+                                                                    
+                                                                    </td>
+                                                    
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-future" id="future_3"></div>
+                                                                    
+                                                                    </td>
+                                                    
+                                                                </tr>
+                                                    
+                                                            </table>
+                        
+                                                        </div>
+
+                                                    </div>
+
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+                                        
+                                        <div class="coc-card-wrap">
+                                        
+                                            <div class="parbase coc-service coc-service-4">
+
+                                                <div id="coc-service-4_file_box" class="coc-card" medianlabel="Cost">
+
+                                                    <div id="coc-service-4_headLabel_1" class="coc-cards-header">
+
+                                                        <table class="coc-card-tableheader">
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-service-4_headLabel">
+                                                                        
+                                                                        <span class="coc-care-icon coc-service-4-icon "></span>
+                                                                        
+                                                                        Nursing Home Care
+                                                                    
+                                                                    </span>
+                                                                    
+                                                                    <i class="fa fa-info-circle coc-card-icon" data-container="body" data-toggle="tooltip" data-html="true" data-placement="bottom" data-original-title="<p><b>Nursing Home Care</b></p><p>Nursing Home Care is for people who may need a higher level of supervision and care than in an assisted living facility. They offer residents personal care, room and board, supervision, medication, therapies and rehabilitation, as well as skilled nursing care 24 hours a day.</p>" data-cardSID="coc-service-4"></i>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td>
+                                                                    
+                                                                    <span class="m-medianLabel"></span>
+                                                                
+                                                                </td>
+                                                                
+                                                                <td class="m-coc-tdlast">
+                                                                    
+                                                                    <span class="m-futureLabel"></span>
+                                                                
+                                                                </td>
+                                                            
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div> 
+
+                                                    <div class="flipClass_coc-service-4">                                        
+
+                                                        <div class="coc-card-inner ">
+                                                            
+                                                            <table class="coc-table-card">
+
+                                                                <tr>
+
+                                                                    <td>
+
+                                                                        <strong>
+                                                                            
+                                                                            <div id="coc-service-4_headLabel_3" class="coc-service-headLabel">
+                                                                                
+                                                                                Semi-Private Room<sup>1</sup>
+                                                                            
+                                                                            </div>
+                                                                        
+                                                                        </strong>
+
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_4_mobile"></div>
+                                                                    
+                                                                    </td>    
+
+                                                                    <td class="m-coc-tdlast">
+                                                                        
+                                                                        <div class="num-future" id="future_4_mobile"></div>
+                                                                    
+                                                                    </td>  
+
+                                                                </tr>
+
+                                                                <tr>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary medianLabel" id="median_label_4">Cost</div>
+                                                                    
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_4"></div>
+                                                                    
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr class="growth-row">
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary" id="growth_label_4">
+                                                                            
+                                                                            5-yr Annual Growth<sup>2</sup>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-growth" id="growth_4"></div>
+                                                                    
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr class="future-row" style="display:none;">
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary futureLabel" id="future_label_4">Cost</div>
+                                                                    
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-future" id="future_4"></div>
+                                                                    
+                                                                    </td>
+
+                                                                </tr>
+
+                                                            </table>
+
+                                                            <hr>
+
+                                                            <table class="coc-table-card">
+
+                                                                <tr>
+
+                                                                    <td>
+
+                                                                        <strong>
+                                                                            
+                                                                            <div id="coc-service-4_headLabel_4" class="coc-service-headLabel">
+                                                                                
+                                                                                Private Room<sup>1</sup>
+                                                                            
+                                                                            </div>
+                                                                        
+                                                                        </strong>
+
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_5_mobile"></div>
+                                                                    
+                                                                    </td>    
+
+                                                                    <td class="m-coc-tdlast">
+                                                                        
+                                                                        <div class="num-future" id="future_5_mobile"></div>
+                                                                    
+                                                                    </td>  
+
+                                                                </tr>
+
+                                                                <tr>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary medianLabel" id="median_label_5">Cost</div>
+                                                                    
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-cost" id="median_5" ></div>
+                                                                    
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr class="growth-row">
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary" id="growth_label_5">
+                                                                            
+                                                                            5-yr Annual Growth<sup>2</sup>
+                                                                        
+                                                                        </div>
+                                                                    
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-growth" id="growth_5"></div>
+                                                                    
+                                                                    </td>
+
+                                                                </tr>
+
+                                                                <tr class="future-row" style="display:none;">
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-tertiary futureLabel" id="future_label_5">Cost</div>
+                                                                    
+                                                                    </td>
+
+                                                                    <td>
+                                                                        
+                                                                        <div class="num-future" id="future_5" ></div>
+                                                                    
+                                                                    </td>
+
+                                                                </tr>
+
+                                                            </table>  
+                                                                                                    
+                                                        </div>
+                                                    
+                                                    </div>
+                                            
+                                                </div>
+                                            
+                                            </div>
+
+                                        </div>
+
+                                        <div class="coc-hourly-info-block">
+
+                                            <p>Adult Day Health Care, Assisted Living Facility, and Nursing Home Care categories do not use hourly rates.</p>
+            
+                                        </div>
+            
+                                    </div>
+            
+                                </div>
+                                    
+                                <div id="coc-location" class="coc-location cost-of-care__monthly-costs-alt">
+            
+                                    <div class="coc-loc-title cost-of-care__monthly-costs-title-alt" style="display:none;">
+            
+                                        <h2>
+                                            
+                                            <span class="coc-subtitle">
+                                                
+                                                <span class="type">Monthly Costs:</span>
+                                            
+                                            </span>
+                                        
+                                        </h2>
+                                    
+                                    </div>
+                                    
+                                    <div class="cards-wrap-cost">
+                                    
+                                        <div class="coc-location parbase coc-loc-1">
+
+                                            <div id="bottom-coc-loc-1"class="coc-card-wrap coc-loc-1">
+
+                                                <div id="coc-compare-title_coc-loc-1">
+
+                                                    <h3>
+                                                        
+                                                        <span id="coc-subtitle_coc-loc-1">
+                                                            
+                                                            <span title="National Median" class="region coc-color-primary">National Median</span>
+                                                            
+                                                            <span class="year" class="coc-color-primary">(2018)</span>
+                                                        
+                                                        </span>
+                                                    
+                                                    </h2>
+                                                
+                                                </div>
+                                                            
+                                                <div class="coc-card flip-container cards  ">
+                        
+                                                    <div id="coc-loc-1_homeCareLabel" class="coc-cards-header cost-header">
+                        
+                                                        <table class="coc-table-card table-compare-cost">
+                        
+                                                            <tr>
+                        
+                                                                <td>
+                        
+                                                                    Home Health Care
+                                                                    
+                                                                    <i class="fa fa-info-circle cards-icon-service" data-cardSID="homecare" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i>
+                                                                    
+                                                                </td>
+                        
+                                                                <td>
+                                                                    
+                                                                    <div id="yearDisplay-coc-loc-1"></div>
+                                                                
+                                                                </td>
+                        
+                                                                <td>
+                        
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                        
+                                                                        <div id="future-yearDisplay-coc-loc-1"></div>
+                        
+                                                                    </div>
+                        
+                                                                </td>
+                        
+                                                            </tr>
+                        
+                                                        </table>
+                        
+                                                    </div>
+
+                                                    <div class="coc-card-inner cards-inner">
+
+                                                        <table class="coc-table-card table-compare-cost">
+
+                                                            <tr>
+
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-1_homemaker">
+                                                                        
+                                                                        Homemaker Services<sup>2</sup>
+                                                                    
+                                                                    </div>
+                                                                    
+                                                                </td>
+
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-1-cost0" class="num-cost"></span>
+                                                                
+                                                                </td>
+
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-1-percent0" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                            </tr>
+                                                            
+                                                            <tr>
+
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-1_homeHealth">
+                                                                        
+                                                                        Home Health Aide<sup>2</sup>
+
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-1-cost1" class="num-cost"></span>
+                                                                
+                                                                </td>
+
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-1-percent1" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+
+                                                            </tr>
+
+                                                        </table>
+
+                                                    </div>
+                
+                                                    <div id="coc-loc-1_adultHealthCareHead" class="coc-cards-header cost-header">    
+                                                        
+                                                        Adult Day Health Care
+                                                        
+                                                        <i class="fa fa-info-circle cards-icon-service" data-cardSID="healthCare" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i>
+                                                        
+                                                        <span class="cards-year-1"></span>
+                                                        
+                                                        <span class="cards-year-2"></span>
+                                                        
+                                                    </div>
+                                    
+                                                    <div class="coc-card-inner cards-inner">
+                                    
+                                                        <table class="coc-table-card table-compare-cost">
+                                    
+                                                            <tr>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-1_adultHealthCare">
+                                                                        
+                                                                        Adult Day Health Care<sup>1</sup>
+
+                                                                    </div>
+                                                                    
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-1-cost2" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-1-percent2" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                            </tr>
+                                    
+                                                        </table>
+                                    
+                                                    </div>
+                
+                                                    <div id="coc-loc-1_assistedLiving" class="coc-cards-header cost-header">    
+                                        
+                                                        Assisted Living Facility
+                                                        
+                                                        <i class="fa fa-info-circle cards-icon-service" data-cardSID="livingFacility" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i>
+                                                        
+                                                        <span class="cards-year-1"></span>
+                                                        
+                                                        <span class="cards-year-2"></span>
+                                                        
+                                                    </div>
+                                    
+                                                    <div class="coc-card-inner cards-inner">
+                                    
+                                                        <table class="coc-table-card table-compare-cost">
+                                    
+                                                            <tr>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-1_privateBedroom">
+                                                                        
+                                                                        Private, One Bedroom<sup>4</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                        
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-1-cost3" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                        
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-1-percent3" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                        
+                                                            </tr>
+                                        
+                                                        </table>
+                                        
+                                                    </div>
+                
+                                                    <div id="coc-loc-1_nursingHome" class="coc-cards-header cost-header">    
+                                            
+                                                        Nursing Home Care
+                                                        
+                                                        <i class="fa fa-info-circle cards-icon-service" data-cardSID="nursingHome" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i>
+                                                        
+                                                        <span class="cards-year-1"></span>
+                                                        
+                                                        <span class="cards-year-2"></span>
+                                                        
+                                                    </div>
+                                        
+                                                    <div class="coc-card-inner cards-inner">
+                                        
+                                                        <table class="coc-table-card table-compare-cost">
+                                        
+                                                            <tr>
+                        
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-1_semiPrivateRoom">
+                                                                        
+                                                                        Semi - Private Room<sup>5</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                        
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-1-cost4" class="num-cost"></span>
+                                                                
+                                                                </td>
+                        
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-1-percent4" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                        
+                                                            </tr>
+                        
+                                                            <tr>
+                        
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-1_privateRoom">
+                                                                    
+                                                                        Private Room<sup>5</sup>
+                                                                
+                                                                    </div>
+                                                                
+                                                                </td>
+                    
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-1-cost5" class="num-cost"></span>
+                                                                
+                                                                </td>
+                    
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-1" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-1-percent5" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                    
+                                                            </tr>
+                    
+                                                        </table>
+                    
+                                                    </div>
+                    
+                                                </div>
+                    
+                                            </div>
+                                        
+                                        </div>
+
+                                    </div>
+                
+                                    <div class="cards-wrap-cost">
+
+                                        <div class="coc-location parbase coc-loc-2">
+
+                                            <div id="bottom-coc-loc-2"class="coc-card-wrap coc-loc-2">
+
+                                                <div id="coc-compare-title_coc-loc-2">
+
+                                                    <h3>
+                                                        
+                                                        <span id="coc-subtitle_coc-loc-2">
+                                                            
+                                                            <span title="National Median" class="region coc-color-primary">National Median</span>
+                                                            
+                                                            <span class="year" class="coc-color-primary">(2018)</span>
+                                                        
+                                                        </span>
+                                                    
+                                                    </h2>
+
+                                                </div>
+                                                            
+                                                <div class="coc-card flip-container cards">
+                    
+                                                    <div id="coc-loc-2_homeCareLabel" class="coc-cards-header cost-header">
+                    
+                                                        <table class="coc-table-card table-compare-cost">
+                    
+                                                            <tr>
+                    
+                                                                <td>
+                    
+                                                                    Home Health Care
+                                                                    
+                                                                    <i class="fa fa-info-circle cards-icon-service" data-cardSID="homecare" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i>
+                                                                    
+                                                                </td>
+                
+                                                                <td>
+                                                                    
+                                                                    <div id="yearDisplay-coc-loc-2"></div>
+                                                                
+                                                                </td>
+                
+                                                                <td>
+                
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                
+                                                                        <div id="future-yearDisplay-coc-loc-2"></div>
+                
+                                                                    </div>
+                
+                                                                </td>
+                
+                                                            </tr>
+                
+                                                        </table>
+                
+                                                    </div>
+                        
+                                                    <div class="coc-card-inner cards-inner">
+                        
+                                                        <table class="coc-table-card table-compare-cost">
+                        
+                                                            <tr>
+                        
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-2_homemaker">
+                                                                        
+                                                                        Homemaker Services<sup>2</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-2-cost0" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-2-percent0" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                            </tr>
+                                    
+                                                            <tr>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-2_homeHealth">
+                                                                        
+                                                                        Home Health Aide<sup>2</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-2-cost1" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-2-percent1" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                            </tr>
+                                    
+                                                        </table>
+                
+                                                    </div>
+                
+                                                    <div id="coc-loc-2_adultHealthCareHead" class="coc-cards-header cost-header">    
+                                    
+                                                        Adult Day Health Care
+                                                        
+                                                        <i class="fa fa-info-circle cards-icon-service" data-cardSID="healthCare" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i><span class="cards-year-1"></span><span class="cards-year-2"></span>
+                                                        
+                                                    </div>
+                                    
+                                                    <div class="coc-card-inner cards-inner">
+                                    
+                                                        <table class="coc-table-card table-compare-cost">
+                                    
+                                                            <tr>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-2_adultHealthCare">
+                                                                        
+                                                                        Adult Day Health Care<sup>1</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-2-cost2" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-2-percent2" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                    
+                                                            </tr>
+                                    
+                                                        </table>
+                                    
+                                                    </div>
+                
+                                                    <div id="coc-loc-2_assistedLiving" class="coc-cards-header cost-header">    
+                            
+                                                        Assisted Living Facility
+                                                        
+                                                        <i class="fa fa-info-circle cards-icon-service" data-cardSID="livingFacility" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i><span class="cards-year-1"></span><span class="cards-year-2"></span>
+                                                        
+                                                    </div>
+                            
+                                                    <div class="coc-card-inner cards-inner">
+                            
+                                                        <table class="coc-table-card table-compare-cost">
+                            
+                                                            <tr>
+                            
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-2_privateBedroom">
+                                                                        
+                                                                        Private, One Bedroom<sup>4</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                            
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-2-cost3" class="num-cost"></span>
+                                                                
+                                                                </td>
+                            
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-2-percent3" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                            
+                                                            </tr>
+                            
+                                                        </table>
+                            
+                                                    </div>
+                                                    
+                                                    <div id="coc-loc-2_nursingHome" class="coc-cards-header cost-header">    
+                                                
+                                                        Nursing Home Care
+                                                        
+                                                        <i class="fa fa-info-circle cards-icon-service" data-cardSID="nursingHome" data-toggle="tooltip" data-html="true" data-placement="bottom" data-container="body" title=""></i>
+                                                        
+                                                        <span class="cards-year-1"></span>
+                                                        
+                                                        <span class="cards-year-2"></span>
+                                                        
+                                                    </div>
+                                    
+                                                    <div class="coc-card-inner cards-inner">
+                                    
+                                                        <table class="coc-table-card table-compare-cost">
+                                    
+                                                            <tr>
+                                    
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-2_semiPrivateRoom">
+                                                                        
+                                                                        Semi - Private Room<sup>5</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-2-cost4" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-2-percent4" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                
+                                                            </tr>
+                                
+                                                            <tr>
+                                
+                                                                <td>
+                                                                    
+                                                                    <div id="coc-loc-2_privateRoom">
+                                                                        
+                                                                        Private Room<sup>5</sup>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                        
+                                                                <td>
+                                                                    
+                                                                    <span id="coc-loc-2-cost5" class="num-cost"></span>
+                                                                
+                                                                </td>
+                                        
+                                                                <td>
+                                                                    
+                                                                    <div class="bottom-right-coc-loc-2" style="display:none;">
+                                                                        
+                                                                        <span id="coc-loc-2-percent5" class="num-future"></span>
+                                                                    
+                                                                    </div>
+                                                                
+                                                                </td>
+                                        
+                                                            </tr>
+                                        
+                                                        </table>
+                                        
+                                                    </div>
+                                        
+                                                </div>
+                                        
+                                            </div>
+                                        
+                                        </div>
+
+                                    </div>
+
+                                </div>
+            
+                                <div class="coc-weekly-hours-wrapper is-default-hours cost-of-care__weekly-care-hours">
+
+                                    <div class="accordion">
+
+                                        <div class="accordion-wrapper">
+
+                                            <div class="accordion">
+
+                                                <section class="accordion-section">
+
+                                                    <h2 class="accordion-section__heading">
+                                                        
+                                                        <span class="sub-section-header">Change weekly Home Health Care hours <span class="sub-header-info">(Only available with Daily, Monthly, or Annual Cost by Period)</span></span>
+                                                    
+                                                    </h2>
+                                                    
+                                                    <div class="accordion-section__content">
+                                                    
+                                                        <p>
+                                                    
+                                                            <span class="coc-weekly-hours-header">The number of hours needed for home
+                                                                health care can vary based on need.</span>
+                                                    
+                                                            <br>
+                                                        
+                                                            <div class="coc-weekly-hours-for-example">
+                                                                
+                                                                For example:
+                                                                
+                                                                <br>
+
+                                                                20 hours = 4 hours of care/5 days a week
+                                                        
+                                                                <br>
+                                                        
+                                                                <span class="coc-weekly-hours-indent">40 hours = 8 hours of care/5 days a week</span>
+                                                        
+                                                                <br>
+                                                        
+                                                                <span class="coc-weekly-hours-indent coc-weekly-hours-spacer">168 hours = 24 hours of care/7 days a week</span>
+                                                                        
+                                                            </div>
+                                    
+                                                            <div class="cost-of-care__weekly-hours-calculator">
+
+                                                                <span class="strong-bold coc-weekly-hours-text">Enter the number of weekly hours (7-168)</span>
+                                                    
+                                                                <span class="coc-weekly-hours-calculation">
+                                                    
+                                                                    <label class="sr-only" for="weeklyHoursCalculationInput">Enter the number of weekly hours (7-168)</label>
+                                                
+                                                                    <input class="coc-weekly-hours-calculation-input" maxlength="3" value="44" id="weeklyHoursCalculationInput"></input>
+                                                                    
+                                                                    <button class="button-primary light large transparent coc-weekly-hours-calculation-button" type="submit">Calculate</button>
+                                                                
+                                                                    <button class="coc-weekly-hours-calculation-reset-link">Reset hours</button>
+                                                                
+                                                                    <span class="coc-weekly-hours-calculation-error-message">Please enter a valid number.</span>
+                                                
+                                                                </span>
+                                            
+                                                            </div>
+
+                                                            <br>
+                                            
+                                                            <span class="coc-weekly-hours-for-example-mobile">
+                                                                
+                                                                For example:
+                                        
+                                                                <br>
+                                        
+                                                                20 hours = 4 hours of care/5 days a week
+                                        
+                                                                <br>
+                                        
+                                                                40 hours = 8 hours of care/5 days a week
+                                        
+                                                                <br>
+                                        
+                                                                168 hours = 24 hours of care/7 days a week
+                                        
+                                                            </span>
+                                        
+                                                        </p>
+                                        
+                                                    </div>
+                                        
+                                                </section>
+                                        
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+            
+                                <p class="pull-right coc-key-findings-2"><a href="/dam/Americas/US/PDFs/Consumer/corporate/cost-of-care/131168_081417.pdf" target="_blank">Key findings and methodology</a></p>
+            
+                                <div class="coc-resp">
+
+                                    <div class="coc-compare-other">
+
+                                        <div class="coc-add-loc">
+
+                                            <span class="coc-plus-button">+</span>
+                                            
+                                            <br>
+
+                                            <strong class="coc-compare-loc coc-compare-cta">Compare Location</strong>
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                
+                        <!-- END Details -->
+
+                    </div>
+
+                    <div class="modal fade" id="cocErrorNonUS" tabindex="-1" aria-hidden="true">
+
+                        <div class="modal-dialog">
+
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+
+                                    <i class="fa fa-times close" data-dismiss="modal" aria-label="Close"></i>
+
+                                    <h2 class="modal-title">Invalid selection</h2>
+
+                                </div>
+
+                                <div class="modal-body">
+
+                                    <p>Please select a state or location within the United States.</p>
+
+                                </div>
+
+                                <div class="modal-footer">
+
+                                    <button type="button" class="btn btn-tertiary" data-dismiss="modal">Continue</button>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                        
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="clientlib-all.js"></script>
+
+    <script src="clientlib.js"></script>
+
+</body>
+
+</html>

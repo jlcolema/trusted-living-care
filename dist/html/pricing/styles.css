@@ -15,8 +15,17 @@
 	.pricing__title {
 
 		margin: 0 0 5px 0;
-		padding: 0 180px;
 		text-align: center;
+
+	}
+
+	@media screen and (min-width: 750px) {
+
+		.pricing__title {
+
+			padding: 0 180px;
+
+		}
 
 	}
 
@@ -25,6 +34,7 @@
 		.pricing__abbr--title[title] {
 
 			border: none;
+			text-decoration: none;
 
 		}
 
@@ -91,6 +101,7 @@
 		.pricing__abbr--subtitle[title] {
 
 			border: none;
+			text-decoration: none;
 
 		}
 
